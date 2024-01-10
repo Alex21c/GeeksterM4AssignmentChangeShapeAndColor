@@ -1,0 +1,69 @@
+:root {
+  --color-white: #FFFFFF;
+}
+*, ::before, ::after{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+.displayNone{
+  display:none;
+}
+html{
+  font-size:16px;
+}
+
+
+div.container{
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+  gap: .5rem;
+  margin: 5rem auto;
+  
+}
+
+
+
+div#circle{
+  background-color: green;
+  height: 10rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#shape{
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+}
+
+.triangle{
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.circle{
+  clip-path: circle(50% at 50% 50%);
+}
+
+.square{
+  clip-path: inset(0 0 0 0);  
+}
+.pentagon{
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+
+}
+.diamond{
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.star{
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+button{
+  font-size: 1rem;
+  padding: .5rem;
+}
